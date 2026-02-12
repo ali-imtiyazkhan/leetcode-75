@@ -2,22 +2,27 @@
 #include <vector>
 using namespace std;
 
-int findFirst(vector<int>& nums, int target) {
+int findFirst(vector<int> &nums, int target)
+{
     int start = 0;
     int end = nums.size() - 1;
     int ans = -1;
 
-    while(start <= end) {
+    while (start <= end)
+    {
         int mid = start + (end - start) / 2;
 
-        if(nums[mid] == target) {
+        if (nums[mid] == target)
+        {
             ans = mid;
             end = mid - 1;
         }
-        else if(nums[mid] < target) {
+        else if (nums[mid] < target)
+        {
             start = mid + 1;
         }
-        else {
+        else
+        {
             end = mid - 1;
         }
     }
@@ -25,22 +30,27 @@ int findFirst(vector<int>& nums, int target) {
     return ans;
 }
 
-int findLast(vector<int>& nums, int target) {
+int findLast(vector<int> &nums, int target)
+{
     int start = 0;
     int end = nums.size() - 1;
     int ans = -1;
 
-    while(start <= end) {
+    while (start <= end)
+    {
         int mid = start + (end - start) / 2;
 
-        if(nums[mid] == target) {
+        if (nums[mid] == target)
+        {
             ans = mid;
             start = mid + 1;
         }
-        else if(nums[mid] < target) {
+        else if (nums[mid] < target)
+        {
             start = mid + 1;
         }
-        else {
+        else
+        {
             end = mid - 1;
         }
     }
@@ -48,14 +58,16 @@ int findLast(vector<int>& nums, int target) {
     return ans;
 }
 
-int main() {
+int main()
+{
     int n;
     cout << "Enter number of elements: ";
     cin >> n;
 
     vector<int> nums(n);
     cout << "Enter sorted elements: ";
-    for(int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++)
+    {
         cin >> nums[i];
     }
 
