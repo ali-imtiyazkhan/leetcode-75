@@ -76,21 +76,6 @@ Each folder contains:
 
 ---
 
-## 📈 Progress Tracker
-
-- [ ] Sliding Window
-- [ ] Two Pointers
-- [ ] HashMap / Set
-- [ ] Binary Search
-- [ ] Stack
-- [ ] Dynamic Programming
-- [ ] Trees
-- [ ] Graphs
-- [ ] Greedy
-- [ ] Prefix Sum
-
----
-
 ## ⭐ Why This Repo?
 
 Consistency > Random practice.
